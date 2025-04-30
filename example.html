@@ -1,0 +1,135 @@
+<!-- 移除原页面中重复的 example.html 代码，仅保留主内容 -->
+<!-- 页脚和脚本部分保持不变 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算法应用实例展示 - 浓烟环境人体目标判别算法</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+       .example-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+       .example-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #2d3748;
+            margin-bottom: 1.5rem; /* 增加卡片底部间距 */
+        }
+       .example-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+       .gif-preview {
+            height: 250px; /* 调整动图高度 */
+            object-fit: cover;
+            display: block;
+            width: 100%;
+        }
+       .card-content {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white">浓烟环境人体目标判别算法作品</a>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="menu" class="hidden md:flex md:space-x-4 text-gray-600 font-medium text-sm uppercase transition-all duration-300">
+                <a href="yszt.html#function-intro" class="hover:text-gray-800">功能介绍</a>
+                <a href="yszt.html#application-scenarios" class="hover:text-gray-800">应用场景</a>
+                <a href="yszt.html" class="hover:text-gray-800">预期功能</a>
+                <a href="yszt.html#function-display" class="hover:text-gray-800">功能展示</a>
+                <a href="example.html" class="hover:text-gray-800 font-semibold">例子展示</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区域 -->
+    <main class="mt-24 pb-16">
+        <section class="example-container py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+                算法应用实例展示
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <!-- 调整为两行两列 -->
+                <!-- 例子1 -->
+                <div class="example-card">
+                    <img src="img/wuxi_2_0023.jpg" alt="浓烟环境目标追踪动图" class="gif-preview">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-white mb-2">浓烟环境目标追踪演示</h3>
+                        <p class="text-gray-600">
+                            模拟火场环境下算法实时追踪移动目标，展示动态目标框选与轨迹预测功能。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 例子2 -->
+                <div class="example-card">
+                    <img src="img/wuxi_2_0004.jpg" alt="浓烟去烟演示" class="gif-preview">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-white mb-2">浓烟去烟识别演示</h3>
+                        <p class="text-gray-600">
+                            展示在浓烟中快速识别静止目标，抗烟雾干扰与低照度增强效果。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 例子3 -->
+                <div class="example-card">
+                    <img src="img/wuxi_2_0006.jpg" alt="空间浓烟目标定位" class="gif-preview">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-white mb-2">空间浓烟目标定位</h3>
+                        <p class="text-gray-600">
+                            地下浓烟环境中，通过算法定位目标，展示多传感器融合识别能力。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 例子4 -->
+                <div class="example-card">
+                    <img src="img/wuxi_2_0003.jpg" alt="复杂场景多目标处理" class="gif-preview">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold text-white mb-2">复杂场景多目标处理</h3>
+                        <p class="text-gray-600">
+                            模拟多人移动 + 高温干扰场景，展示算法同时追踪多个目标并排除热源干扰的能力。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 响应式菜单脚本 -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 浓烟环境人体目标判别算法作品展示. 保留所有权利.</p>
+        </div>
+    </footer>
+</body>
+</html>

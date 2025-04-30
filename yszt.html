@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浓烟环境人体目标判别算法作品展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        nav {
+            background-color: #2d3748;
+        }
+
+        .bg-gray-100 {
+            background-color: #2d3748;
+        }
+
+        .bg-white {
+            background-color: #4a5568;
+        }
+
+        .text-gray-800 {
+            color: #e2e8f0;
+        }
+
+        .text-gray-600 {
+            color: #cbd5e0;
+        }
+
+        .bg-gradient-to-r {
+            background-image: linear-gradient(to right, #1a202c, #2d3748);
+        }
+
+        .bg-gray-800 {
+            background-color: #171923;
+        }
+
+        .hover:text-gray-800:hover {
+            color: #a0aec0;
+        }
+
+        .bg-white.text-blue-500 {
+            background-color: #e2e8f0;
+            color: #2b6cb0;
+        }
+
+        .bg-white.text-blue-500:hover {
+            background-color: #cbd5e0;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 导航栏 -->
+    <nav class="shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white">浓烟环境人体目标判别算法作品</a>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="menu"
+                class="hidden md:flex md:space-x-4 text-gray-600 font-medium text-sm uppercase transition-all duration-300">
+                <a href="#function-intro" class="hover:text-gray-800">功能介绍</a>
+                <a href="#application-scenarios" class="hover:text-gray-800">应用场景</a>
+                <a href="#expected-function" class="hover:text-gray-800">预期功能</a> <!-- 唯一ID -->
+                <a href="#function-display" class="hover:text-gray-800">功能展示</a> <!-- 唯一ID -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄部分 -->
+    <section class="bg-gradient-to-r text-white text-center py-24">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">浓烟环境人体目标判别算法作品</h1>
+            <p class="text-lg md:text-xl mb-8">探索复杂环境下的目标识别新方案</p>
+            <a href="#"
+                class="bg-white text-blue-500 py-3 px-6 rounded-full shadow-md hover:bg-gray-100 transition-all duration-300">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 功能介绍 -->
+    <section id="function-intro" class="bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">功能介绍</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <i class="fas fa-image text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">浓烟环境下的图像增强与降噪</h3>
+                    <p class="text-gray-600">开发多模态融合算法，结合可见光与红外图像，通过自适应对比度增强、烟雾散射模型校正，提升浓烟中人体目标的边缘清晰度和特征可辨识度。集成时空域降噪技术，消除热成像设备噪声及装备老化导致的图像模糊，确保低信噪比下的目标轮廓保留。</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <i class="fas fa-crosshairs text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">抗高温干扰的实时目标定位</h3>
+                    <p class="text-gray-600">设计轻量化深度学习模型，结合人体热辐射特征先验知识，构建抗热干扰的目标检测框架，实时输出人体目标的位置坐标。支持动态目标追踪，通过卡尔曼滤波预测运动轨迹，解决火场中人员移动或装备遮挡导致的漏检问题。</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <i class="fas fa-brain text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">高压场景下的鲁棒性决策支持</h3>
+                    <p class="text-gray-600">输出结构化判别结果，支持与消防指挥系统实时对接，缩短决策时间。内置故障容错机制，在设备部分参数异常时，仍能保持较高的目标识别准确率。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用场景 -->
+    <section id="application-scenarios" class="bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">应用场景</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="img/image1.png" alt="消防救援场景" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">浓烟环境消防救援</h3>
+                        <p class="text-gray-600">针对火灾起数逐年上升、直接经济损失惨重的现状，算法可嵌入消防无人机、单兵头盔摄像头或移动机器人，解决火场中“看不见、辨不清、定位慢”的痛点，辅助消防员快速锁定被困人员位置，降低救援盲区。</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="img/image2.png" alt="复杂环境探测场景" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">复杂环境目标探测</h3>
+                        <p class="text-gray-600">适用于大雾天气中的户外搜救、隧道/地下空间失联人员定位、丛林/废墟中的敌方人员识别、安防领域嫌疑人追踪等低能见度和隐蔽场景。</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="img/image3.png" alt="军用实战与工业场景" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">军用实战与工业场景</h3>
+                        <p class="text-gray-600">可用于隐蔽场景捉拿嫌疑人，以及化工园区火灾早期人体目标判别，辅助应急疏散决策。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 预期功能 -->
+    <section id="function-display" class="bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">预期功能</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">技术效果可视化</h3>
+                    <img src="img/原始.png" alt="图像增强对比" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-gray-600">展示同一浓烟场景下的原始图像与处理后图像，标注关键特征点。同时通过视频演示算法在模拟火场环境中对移动人体目标的实时框选、追踪轨迹，显示单帧处理时间。</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">抗干扰能力实测数据</h3>
+                    <img src="img/shibie.jpg" alt="抗干扰测试" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-gray-600">对比不同烟雾等级下的识别准确率，以及在高温热源附近设置人体模型，展示算法如何排除干扰并正确识别目标，对比传统算法误检率降低情况。</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">实战价值模拟验证</h3>
+                    <img src="img/输出.png" alt="实战模拟" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-gray-600">通过消防演练数据，展示使用该算法后目标定位时间缩短、漏检率降低的情况。同时展示算法与消防指挥平台的对接效果，包括定位结果在电子地图上的实时标注、风险等级预警弹窗等交互功能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+	<!-- 功能展示 -->
+	<section id="function-display" class="bg-gray-100">
+	    <div class="container mx-auto px-4">
+	        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">功能展示 - 输入输出图片对比</h2>
+	        <div class="grid grid-cols-1 md:grid-cols-2 gap-12"> <!-- 两列对比布局 -->
+	
+	            <!-- 输入图片区域（带文件选择功能，初始隐藏图片） -->
+	            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+	                <h3 class="text-xl font-bold text-gray-800 mb-4">输入图片（原始图像）</h3>
+	                <!-- 隐藏的文件输入框 -->
+	                <input type="file" id="inputFile" accept="image/*" class="hidden">
+	                <!-- 触发文件选择的按钮 -->
+	                <button id="selectButton" class="bg-blue-500 text-white py-2 px-4 rounded-md mb-4">
+	                    选择本地图片文件
+	                </button>
+	                <!-- 图片预览区域，初始隐藏（添加hidden类） -->
+	                <img id="inputImg" src="#" alt="浓烟环境原始图像" class="w-full h-64 object-cover rounded-md mb-4 hidden">
+	                <p class="text-gray-600">
+	                    原始图片说明：浓烟环境下低对比度、高噪声的可见光/红外图像<br>
+	                    （点击上方按钮选择本地图片文件）
+	                </p>
+	            </div>
+	
+	            <!-- 输出图片区域（初始隐藏，固定路径） -->
+	            <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+	                <h3 class="text-xl font-bold text-gray-800 mb-4">输出图片（算法处理后）</h3>
+	                <!-- 输出图片初始隐藏，src设置为固定路径 -->
+	                <img id="outputImg" src="img/输出.png" alt="增强降噪后图像" class="w-full h-64 object-cover rounded-md mb-4 hidden">
+	                <p class="text-gray-600">
+	                    输出图片说明：经算法处理后的增强图像，目标轮廓清晰化、噪声抑制<br>
+	                </p>
+	            </div>
+	
+	        </div>
+	    </div>
+	</section>
+
+	<script>
+	    const inputFile = document.getElementById('inputFile');
+	    const selectButton = document.getElementById('selectButton');
+	    const inputImg = document.getElementById('inputImg');
+	    const outputImg = document.getElementById('outputImg');
+	
+	    selectButton.addEventListener('click', () => {
+	        inputFile.click();
+	    });
+	
+	    inputFile.addEventListener('change', (e) => {
+	        const file = e.target.files[0];
+	        if (file) {
+	            const reader = new FileReader();
+	            
+	            // 输入图片立即显示
+	            reader.onload = (event) => {
+	                inputImg.src = event.target.result;
+	                inputImg.classList.remove('hidden'); // 立即显示输入图片
+	                
+	                // 设置输出图片延迟2秒显示（模拟算法处理时间）
+	                setTimeout(() => {
+	                    outputImg.classList.remove('hidden'); // 延迟后显示输出图片
+	                }, 2000); // 2000毫秒=2秒（可调整为2000-3000之间）
+	            };
+	            reader.readAsDataURL(file);
+	        } else {
+	            inputImg.src = "#";
+	            inputImg.classList.add('hidden');
+	            outputImg.classList.add('hidden');
+	        }
+	    });
+	</script>
+
+<nav class="shadow-md fixed top-0 left-0 right-0 z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold text-white">浓烟环境人体目标判别算法作品</a>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="menu" class="hidden md:flex md:space-x-4 text-gray-600 font-medium text-sm uppercase transition-all duration-300">
+            <a href="yszt.html" class="hover:text-gray-800">功能介绍</a>          <!-- 指向主页面功能介绍 -->
+            <a href="yszt.html#application-scenarios" class="hover:text-gray-800">应用场景</a>  <!-- 指向主页面应用场景 -->
+            <a href="yszt.html#expected-function" class="hover:text-gray-800">预期功能</a>      <!-- 指向主页面预期功能 -->
+            <a href="yszt.html#function-display" class="hover:text-gray-800">功能展示</a>      <!-- 指向主页面功能展示 -->
+            <a href="example.html" class="hover:text-gray-800 font-semibold">例子展示</a>       <!-- 当前页面高亮 -->
+        </div>
+    </div>
+</nav>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算法应用实例展示 - 浓烟环境人体目标判别算法</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+       .example-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+       .example-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #2d3748;
+            margin-bottom: 1.5rem; /* 增加卡片底部间距 */
+        }
+       .example-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+       .gif-preview {
+            height: 250px; /* 调整动图高度 */
+            object-fit: cover;
+            display: block;
+            width: 100%;
+        }
+       .card-content {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="shadow-md fixed top-0 left-0 right-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white">浓烟环境人体目标判别算法作品</a>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="menu" class="hidden md:flex md:space-x-4 text-gray-600 font-medium text-sm uppercase transition-all duration-300">
+                <a href="yszt.html#function-intro" class="hover:text-gray-800">功能介绍</a>
+                <a href="yszt.html#application-scenarios" class="hover:text-gray-800">应用场景</a>
+                <a href="yszt.html#function-display" class="hover:text-gray-800">预期功能</a>
+                <a href="yszt.html#function-display" class="hover:text-gray-800">功能展示</a>
+                <a href="example.html" class="hover:text-gray-800 font-semibold">例子展示</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 响应式菜单脚本 -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+   <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 浓烟环境人体目标判别算法作品展示. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>    
